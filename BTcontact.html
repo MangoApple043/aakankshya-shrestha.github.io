@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+    <script type="text/css" src="bootstrap.css"></script>
+    <link href="bootstrap1/bootstrap.css" type="text/css" rel="stylesheet">
+    <style>
+       div.col-md-4{
+            font-size: 100%;
+        }
+       div.container{
+           font-size: 150%;
+       }
+       h1{
+           background-color: black;
+           height: 100px;
+           width:100%;
+           text-align: center;
+           color: white;
+       }
+
+       footer {
+           display: block;
+           position: absolute;
+           bottom: 0px;
+           background-color: black;
+           height: 50px;
+           width:100%;
+           text-align: center;
+           color: white;
+       }
+       .dropbtn {
+           background-color: black;
+           color: white;
+           padding: 16px;
+           font-size: 16px;
+           border: none;
+           width: 180px;
+       }
+       .dropdown {
+           position: relative;
+           display: inline-block;
+       }
+       .dropdown-content {
+           display: none;
+           position: absolute;
+           background-color: darkgrey;
+           min-width: 160px;
+           z-index: 1;
+       }
+       .dropdown-content a {
+           color: black;
+           padding: 12px 16px;
+           text-decoration: none;
+           display: block;
+       }
+       .dropdown-content a:hover {
+           background-color: lightgrey;
+       }
+       .dropdown:hover .dropdown-content {
+           display: block;
+       }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>contact us</h1>
+            <h2><small>help us improve</small></h2>
+            <p>
+               Send us your suggestions.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+<form>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="email" required>
+    </div>
+    <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" class="form-control" id="subject" placeholder="topic/subject">
+    </div>
+    <div class="form-group">
+    <label for="message">Message:</label>
+    <textarea class="form-control" rows="5" id="message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+    </div>
+        <div class="col-md-5">
+                <div class="table-responsive"><!--makes table responsive-->
+                    <table class="table table-striped">
+                        <tbody>
+                        <tr>
+                            <th><p><span class="glyphicon glyphicon-envelope"></span>EMAIL</p></th>
+                        </tr>
+                        <tr>
+                            <td>aakankshya.shrestha@deerwalk.edu.np</td>
+                        </tr>
+                        <tr>
+                            <th>PHONE</th>
+                        </tr>
+                        <tr>
+                            <td>9861604944</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="BT1.html">HOME</a>
+                    <a href="BTabout.html">ABOUT US</a>
+                    <a href="BTlogin.html">LOGIN</a>
+                    <a href="BTaccount.html">CREATE ACCOUNT</a>
+                </div>
+                <br><br><br><br><br><br><br><br><hr>
+            </div>
+            </div>
+    </div>
+
+<div class="col-md-12">
+    <br><hr><br>
+<footer>
+    <b>© aakankshya.shrestha</b>
+</footer>
+</div>
+</div>
+</body>
+</html>

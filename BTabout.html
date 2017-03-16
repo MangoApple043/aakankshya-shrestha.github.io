@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+    <script type="text/css" src="bootstrap.css"></script>
+    <link href="bootstrap1/bootstrap.css" type="text/css" rel="stylesheet">
+    <style>
+       div.col-md-10{
+           font-size: 150%;
+       }
+        div.col-md-12{
+            background-color: black;
+            height: 100px;
+            width:100%;
+            text-align: center;
+            color: white;
+        }
+       footer {
+           display: block;
+           position: absolute;
+           bottom: 0px;
+           background-color: black;
+           height: 50px;
+           width:98%;
+           text-align: center;
+           color: white;
+       }
+       .dropbtn {
+           background-color: black;
+           color: white;
+           padding: 16px;
+           font-size: 16px;
+           border: none;
+           width: 180px;
+       }
+       .dropdown {
+           position: relative;
+           display: inline-block;
+       }
+       .dropdown-content {
+           display: none;
+           position: absolute;
+           background-color: darkgrey;
+           min-width: 160px;
+           z-index: 1;
+       }
+       .dropdown-content a {
+           color: black;
+           padding: 12px 16px;
+           text-decoration: none;
+           display: block;
+       }
+       .dropdown-content a:hover {
+           background-color: lightgrey;
+       }
+       .dropdown:hover .dropdown-content {
+           display: block;
+       }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>About Us</h1>
+        </div>
+
+        <div class="col-md-10">
+            <br><br>
+            <h3>What Is BusTracker</h3>
+            <p>
+                Bus Tracker is an application that uses GPS tracking system to show
+                the real time position of public buses. Since travelling in public
+                buses can be quite a hassle this app would provide an easier option
+                to get information about the local buses travelling near the user’s
+                location.
+            </p>
+          <br><br>
+            <h3>How It Works?</h3>
+        <p> It would first track the user’s location and then show the real time
+            position of all the public transportation vehicles and routes around that
+            person. The user would get an option to select which yatayat they would like
+            to track and the app would focus on that specific bus routes and show the
+            position of the vehicles along with their estimated time of arrival.
+        </p>
+        </div>
+        <div class="col-md-2">
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="BT1.html">HOME</a>
+                    <a href="BTcontact.html">CONTACT US</a>
+                    <a href="BTaccount.html">CREATE ACCOUNT</a>
+                    <a href="BTlogin.html">LOGIN</a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    <br><br><br><br><br><br>
+    <div class="col-md-12">
+        <footer style="font-size: 20px;">
+            <b>© aakankshya.shrestha</b>
+        </footer>
+    </div>
+
+</div>
+</body>
+</html>
