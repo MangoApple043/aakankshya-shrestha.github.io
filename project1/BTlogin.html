@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+    <script type="text/css" src="bootstrap.css"></script>
+    <link href="bootstrap1/bootstrap.css" type="text/css" rel="stylesheet">
+    <style>
+        footer {
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            background-color: black;
+            height: 50px;
+            width:100%;
+            text-align: center;
+            color: white;
+        }
+        header {
+            background-color: black;
+            height: 100px;
+            text-align: center;
+            color: white;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: black;
+            color:white;
+        }
+        div.col-md-6{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>WELCOME TO BUS TRACKER</h1>
+</header>
+<br><hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Passoword:</label>
+                    <input type="password" class="form-control" id="password" placeholder="must be eight characters" required>
+                </div>
+                <button><a href="#"><span style="color: white;">Forgot password?</span></a></button>
+            </form>
+                <button><a href="BThome.html"><span style="color: white;">Login</span></a></button>
+            <br>
+
+        </div>
+        <div class="col-md-6">
+            <h4>Don't have an account yet?</h4>
+            <button><a href="BTaccount.html"><span style="color: white;">Sign Up</span></a></button>
+            <button><a href="BT1.html"><span style="color: white">Back to home</span></a></button>
+        </div>
+    </div>
+</div>
+<footer>
+    <b>© aakankshya.shrestha</b>
+</footer>
+</body>
+</html>
