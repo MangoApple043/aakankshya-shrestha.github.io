@@ -14,14 +14,13 @@
         div.container{
             font-size: 150%;
         }
-        h1{
+        div.col-md-6{
             background-color: black;
             height: 100px;
             width:100%;
             text-align: center;
             color: white;
         }
-
         footer {
             display: block;
             position: absolute;
@@ -39,14 +38,17 @@
         .dropbtn {
             background-color: black;
             color: white;
-            padding: 16px;
+            padding: 0px;
             font-size: 16px;
             border: none;
-            width: 200px;
+
         }
         .dropdown {
             position: relative;
             display: inline-block;
+            z-index: 1;
+            top: -90px;
+
         }
         .dropdown-content {
             display: none;
@@ -60,6 +62,7 @@
             padding: 12px 16px;
             text-decoration: none;
             display: block;
+            font-size: 16px;
         }
         .dropdown-content a:hover {
             background-color: lightgrey;
@@ -67,28 +70,52 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+        div.line {
+            width: 60px;
+            height: 4px;
+            background-color: white;
+            margin: 10px 0;
+        }
+
     </style>
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h1>tracking your location</h1>
+        <div class="col-md-6">
+                  <h1>Tracking Your Location</h1>
         </div>
+            <div class="col-md-3">
+                <div class="dropdown">
+                    <button class="dropbtn"><div class="line"></div><div class="line"></div><div class="line"></div></button>
+                    <div class="dropdown-content">
+                        <a href="BT1.html">HOME</a>
+                        <a href="BTabout.html">ABOUT US</a>
+                        <a href="BTcontact.html">CONTACT US</a>
+                        <a href="BTlogin.html">LOGIN</a>
+                        <a href="BTaccount.html">CREATE ACCOUNT</a>
+                    </div>
+                </div>
+            </div>
     </div>
-
     <div class="row">
+
         <div class="col-md-9">
             <img src="map1.png" alt="map" width="800px" height="400px">
+            <br><br>
             <button><a href="BTlocation.html"><span style="color: white" >TRY AGAIN</span></a></button>
+            <br><br>
             <div class="form-group">
-                <label for="destination">your destination:</label>
-                <input type="text" class="form-control" id="destination">
+                <label for="destination">Your Destination:</label>
+                <br>
+                <input type="text" class="form-control" id="destination" style="width:300px;">
             </div>
+            <br>
             <button><a href="BTbus.html"><span style="color: white" >CONTINUE</span></a> </button>
         </div>
         <div class="col-md-3">
             <div class="form-group">
+                <br><br>
                 <label for="name">Enter Location To Search:</label>
                 <input type="text" class="form-control" id="name">
             </div>
@@ -96,22 +123,14 @@
             <br>
             <hr>
             <br>
-            <div class="dropdown">
-                <button class="dropbtn">Menu</button>
-                <div class="dropdown-content">
-                    <a href="BTcontact.html">CONTACT US</a>
-                    <a href="BTabout.html">ABOUT US</a>
-                    <a href="BTlogin.html">LOGIN</a>
-                    <a href="BTaccount.html">REGISTER</a>
-                </div>
-            </div>
+
             <br><br><br><br><br><br><br><br><br><br><hr><br>
         </div>
         </div>
     <div class="col-md-12">
         <br><br><br><hr><br>
 <footer>
-    <em>© aakankshya.shrestha</em>
+    © aakankshya.shrestha
 </footer>
 </div>
 </div>
