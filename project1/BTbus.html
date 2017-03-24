@@ -11,10 +11,7 @@
         div.col-md-4{
             font-size: 100%;
         }
-        div.container{
-            font-size: 150%;
-        }
-        h1{
+        div.col-md-9{
             background-color: black;
             height: 100px;
             width:100%;
@@ -33,6 +30,7 @@
             width:100%;
             text-align: center;
             color: white;
+            font-size: 16px;
         }
         button{
             background-color: black;
@@ -44,11 +42,13 @@
             padding: 16px;
             font-size: 16px;
             border: none;
-            width: 200px;
+            width: 100px;
         }
         .dropdown {
             position: relative;
             display: inline-block;
+            z-index: 1;
+            top: -90px;
         }
         .dropdown-content {
             display: none;
@@ -62,6 +62,7 @@
             padding: 12px 16px;
             text-decoration: none;
             display: block;
+            font-size: 16px;
         }
         .dropdown-content a:hover {
             background-color: lightgrey;
@@ -69,21 +70,37 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+        div.line {
+            width: 60px;
+            height: 4px;
+            background-color: white;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
 <div class="container">
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-9">
         <h1>Available Transportation<small>...for your route</small></h1>
     </div>
+    <div class="col-md-3">
+        <div class="dropdown">
+            <button class="dropbtn"><div class="line"></div><div class="line"></div><div class="line"></div></button>
+            <div class="dropdown-content">
+                <a href="BT1.html">HOME</a>
+                <a href="BTabout.html">ABOUT US</a>
+                <a href="BTcontact.html">CONTACT US</a>
+                <a href="BTlogin.html">LOGIN</a>
+                <a href="BTaccount.html">CREATE ACCOUNT</a>
+            </div>
+        </div>
+    </div>
 </div>
-
-<h2>your location: .........</h2>
-
     <div class="row">
         <div class="col-md-8">
-            <div class="table-responsive"><!--makes table responsive-->
+            <h2>your location: .........</h2>
+            <div class="table-responsive">
                 <table class="table table-striped">
                     <tbody>
                     <tr>
@@ -130,35 +147,23 @@
             </div>
         </div>
                 <div class="col-md-4">
-                <h3>thank you for using BusTracker!</h3>
+                <h3>Thank you for using BusTracker!</h3>
                 <button><a href="BTlocation.html"><span style="color: white; font-size: 20px">lookup another route</span></a></button>
-                <br><hr><br>
-                <div class="dropdown">
 
-                    <button class="dropbtn">Menu</button>
 
-                    <div class="dropdown-content">
-                        <a href="BTcontact.html">CONTACT US</a>
-                        <a href="BTabout.html">ABOUT US</a>
-                        <a href="BTlogin.html">LOGIN</a>
-                        <a href="BTaccount.html">CREATE ACCOUNT</a>
-                    </div>
-
-                </div>
             </div>
         </div>
-
-        <div class="col-md-12">
+    <div class="col-md-12">
           <iframe src="http://yatayat.monsooncollective.org/" style="width: 700px; height: 600px;"></iframe>
         </div>
-    </div>
     <div class="row">
     <div class="col-md-12">
         <br><hr><br>
         <footer>
-            <em>© aakankshya.shrestha</em>
+            © aakankshya.shrestha
         </footer>
     </div>
+</div>
 </div>
 
 </body>
