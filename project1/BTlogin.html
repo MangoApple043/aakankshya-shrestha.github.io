@@ -14,36 +14,99 @@
             bottom: 0px;
             background-color: black;
             height: 50px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+        }
+        div.col-md-8{
+            background-color: black;
+            height: 100px;
             width:100%;
             text-align: center;
             color: white;
         }
-        header {
-            background-color: black;
-            height: 100px;
-            text-align: center;
-            color: white;
-        }
-
         button{
             padding: 10px 20px;
             font-size: 16px;
             background-color: black;
             color:white;
+            font-size: 16px;
         }
-        div.col-md-6{
+        div.col-md-7{
             font-size: 20px;
+        }
+        .dropbtn {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            width: 100px;
+
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+            top: -90px;
+
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: darkgrey;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+        }
+        .dropdown-content a:hover {
+            background-color: lightgrey;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        div.line {
+            width: 60px;
+            height: 4px;
+            background-color: white;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-<header>
-    <h1>WELCOME TO BUS TRACKER</h1>
-</header>
-<br><hr>
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
+
+         <header>
+              <h1>WELCOME TO BUS TRACKER</h1>
+         </header>
+        </div>
+        <div class="col-md-4">
+            <div class="dropdown">
+                <button class="dropbtn"><div class="line"></div><div class="line"></div><div class="line"></div></button>
+                <div class="dropdown-content">
+                    <a href="BT1.html">HOME</a>
+                    <a href="BTabout.html">ABOUT US</a>
+                    <a href="BTcontact.html">CONTACT US</a>
+                    <a href="BTlogin.html">LOGIN</a>
+                    <a href="BTaccount.html">CREATE ACCOUNT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<hr>
+
+    <div class="row">
+        <div class="col-md-7">
             <form>
                 <div class="form-group">
                     <label for="name">Name:</label>
@@ -58,20 +121,22 @@
                     <input type="password" class="form-control" id="password" placeholder="must be eight characters" required>
                 </div>
                 <button><a href="#"><span style="color: white;">Forgot password?</span></a></button>
-            </form>
+            </form><br>
                 <button><a href="BThome.html"><span style="color: white;">Login</span></a></button>
             <br>
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
             <h4>Don't have an account yet?</h4>
-            <button><a href="BTaccount.html"><span style="color: white;">Sign Up</span></a></button>
-            <button><a href="BT1.html"><span style="color: white">Back to home</span></a></button>
+            <button><a href="BTaccount.html"><span style="color: white;">Sign Up Now</span></a></button>
         </div>
     </div>
-</div>
+<div class="col-md-12">
+    <br><br><br><br><br><br><hr><br><br>
 <footer>
     <b>© aakankshya.shrestha</b>
 </footer>
+</div>
+</div>
 </body>
 </html>
