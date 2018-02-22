@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harry Potter Sorting Quiz</title>
+	<style>
+	body{
+		
+	}
+	 img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #content{
+    	width: 800px;
+    	margin-right: auto;
+    	margin-left: auto;
+
+    }
+    button{
+    	padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        position: absolute;
+        top: 55%;
+        left: 45%;
+        border-radius: 10px;
+    }
+    button:hover{
+    	background-color: black;
+    	color: white;
+    }
+
+    fieldset{
+        margin-left:auto;
+        margin-right:auto;
+        border-style: solid;
+        border-radius: 12px;
+        background-color: #eee9e9;
+
+    }
+    </style>
+    <script type="text/javascript">
+    	function takeQuiz(){
+    		window.location="HPQquiz.html";
+    	}
+    </script>
+</head>
+<body>
+	<div id="content">
+	<fieldset>
+    <h1 style="text-align: center; background-color: white;">Get sorted into your Hogwarts House!</h1>
+	<div id="intro-img" class="intro-img">
+        <img id = "intro-logo" src="JS_Project/hh.png">
+         <button type="button" onclick="takeQuiz()">Take the Quiz</button>
+    </div>
+
+  </fieldset>
+   </div>
+</body>
+</html>
