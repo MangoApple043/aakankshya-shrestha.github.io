@@ -4,7 +4,13 @@ var countR = 0;
 var countS = 0; 
 var countH = 0;
 
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
 
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
 
 function answerG(){ 
 	countG = countG+1;
@@ -59,7 +65,7 @@ function getHufflepuff(){
 }
 
 function calcResult(){
-	on();
+	on()
         if(countG>countS && countG>countR && countG>countH){
 
         	getGryffindor();
@@ -84,11 +90,5 @@ function calcResult(){
         	
 }
 
-function on() {
-    document.getElementById("overlay").style.display = "block";
-}
 
-function off() {
-    document.getElementById("overlay").style.display = "none";
-}
 
