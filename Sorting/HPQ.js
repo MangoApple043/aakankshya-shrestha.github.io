@@ -59,6 +59,7 @@ function getHufflepuff(){
 }
 
 function calcResult(){
+	on();
         if(countG>countS && countG>countR && countG>countH){
 
         	getGryffindor();
